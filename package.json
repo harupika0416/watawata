@@ -1,5 +1,5 @@
 {
-  "name": "わかめtube copy",
+  "name": "はるぴかtube copy",
   "version": "0.0.8",
   "main": "index.js",
   "license": "CC-BY-4.0",
@@ -20,7 +20,7 @@
     "soundcloud-downloader": "^1.0.0",
     "bcrypt": "^5.1.1"
   },
-  "description": "わかめ",
+  "description": "はるぴか",
   "engines": {
     "node": "16.x"
   },
