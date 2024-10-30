@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>02</title>
+  <title>スプラ　成長記録</title>
   <link rel="stylesheet" href="/css/slide.css">
   <style>
     body {
@@ -115,13 +115,13 @@
         <li><a href="/tool/htmlproxy">わかめPROXY(軽量化版)</a></li>
     </ul>
         <div class="description">
-           <h2>わかめおいしい！ってなに？</h2>
-           <p>あなたが見たいサイトに対してリクエストを送信し、返ってきたのを表示します。<br>
-            複雑なサイトが相手だと普通にバグります<br>
-           「そのページの内容を素早く見たい時」に使用して下さい。例えばブログとかですかね。</p>
+           <h2> </h2>
+           <p> <br>
+             <br>
+            </p>
           <h2>軽量化版と何か違うの？</h2>
           <p>
-            「わかめおいしい」は、すでに存在しているわかめPROXYの強化バージョンです。<br>
+            すでに存在しているわかめPROXYの強化バージョンです。<br>
             リンクを踏んでも正常に動作し、画像を一度サーバーサイドに持ってくることによって規制されているサイトの画像だろうと表示します。<br>
             さらに、そのサイトが読み込んでいるcssやjavascript全てを無理やり取得して表示します。<br>
             ブログなどの静的サイトは大得意ですが、動的なサイトはニガテです...(´・ω・｀)
@@ -151,7 +151,7 @@
 
       const redirectUrl = `/getwakame/${encodeURIComponent(replacedUrl)}`;
 
-      window.location.href = redirectUrl;
+      window.__cpLocation.href = redirectUrl;
     });
 const menuBtn = document.getElementById('menu-btn');
 const sideMenu = document.getElementById('side-menu');
