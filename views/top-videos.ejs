@@ -160,9 +160,9 @@ p.description {
 <body>
   <header>
     <div class="banner">
-      <button class="btn btn-link" onclick="window.location.href='/'">ホーム</button>
-      <button class="btn btn-link" onclick="window.location.href='/blog'">お知らせ</button>
-      <button class="btn btn-link" onclick="window.location.href='/wakams'">わかめMusic</button>
+      <button class="btn btn-link" onclick="window.__cpLocation.href='/'">ホーム</button>
+      <button class="btn btn-link" onclick="window.__cpLocation.href='/blog'">お知らせ</button>
+      <button class="btn btn-link" onclick="window.__cpLocation.href='/wakams'">わかめMusic</button>
       <form class="d-flex" action="/s">
         <input type="text" name="q" class="form-control" placeholder="キリ番ダネー" required>
       </form>
@@ -172,7 +172,7 @@ p.description {
 
   <div class="container">
     <h1>ランキング👑</h1>
-    <p class="description">わかめtubeで直近で再生された<%= count > 1000 ? 1000 : count %>
+    <p class="description">はるぴかtubeで直近で再生された<%= count > 1000 ? 1000 : count %>
 件の動画の中での再生数ランキングです。一応、右上の「もっと遊ぶ」から何件までのデータを参照するかを指定できます。<br>
     なんか友達に「面白そう」って言われたので作ってみました(・∀・)。<br>
     感想: 僕が開発のための動作確認に使っている曲が上の方に来てるな、と言う印象。このページを見れば最近わかめくんがよく聴く曲がわかります。たぶん</p>
@@ -200,7 +200,7 @@ p.description {
         document.getElementById('loadVideosButton').addEventListener('click', () => {
             const count = prompt("何件まで読み込みますか？　(最大で1000件までで、1000より大きい場合は自動的に1000になります。)");
             if (count && !isNaN(count) && count > 0) {
-                window.location.href = `/topvideos?count=${count}`;
+                window.__cpLocation.href = `/topvideos?count=${count}`;
             } else {
                 alert("ちゃんとした数字が入力されていません。");
             }
