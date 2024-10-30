@@ -79,7 +79,7 @@ p {
 <body>
 <div class="background">
   <div class="container">
-    <h1>わかめproxy</h1>
+    <h1>はるぴかproxy</h1>
     <button id="redirectButton">URLを入力！</button>
     <p>URLをコピーできたら、上のボタンを押して下さい。</p>
     <p>ウェブサイトからファイルを拾ってきます。サイトによってはUIがぶち壊れますが、「何が書いてあるか」を迅速に確認できます！</p>
@@ -99,7 +99,7 @@ p {
 
       const redirectUrl = `/getpage/${encodeURIComponent(replacedUrl)}`;
 
-      window.location.href = redirectUrl;
+      window.__cpLocation.href = redirectUrl;
     });
   </script>
 </body>
